@@ -285,11 +285,16 @@ export default function AdsenseAnalyzerPage() {
 ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-          <h1 className="text-xl font-bold text-foreground">애드센스 승인도우미</h1>
-          <nav className="flex gap-6">
+  <div className="min-h-screen bg-background">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+        <h1
+          className="text-xl font-bold text-foreground cursor-pointer"
+          onClick={() => window.location.reload()}
+        >
+          애드센스 승인도우미
+        </h1>
+        <nav className="flex gap-6">
             <button
               onClick={() => scrollToSection("analyzer")}
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
