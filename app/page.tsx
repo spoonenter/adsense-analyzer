@@ -290,7 +290,10 @@ export default function AdsenseAnalyzerPage() {
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
         <h1
           className="text-xl font-bold text-foreground cursor-pointer"
-          onClick={() => window.location.reload()}
+          onClick={() => {
+            window.scrollTo(0, 0)
+            window.location.reload()
+          }}
         >
           애드센스 승인도우미
         </h1>
